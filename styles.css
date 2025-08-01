@@ -8,11 +8,79 @@ body {
 
 .calcBody {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 500px;
-    height: 750px;
-    border: 1px solid gray;
+    height: 550px;
+    border: 2px solid gray;
     border-radius: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 15px;
+    padding-bottom: 20px;
     background-color: rgba(128, 128, 128, 0.15);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
+.display {
+    width: 100%;
+    height: 90px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.850);
+}
+
+.buttons {
+    display: flex;
+}
+
+.functionButtons {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.functionButtons button {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.allClear, .clearEntry {
+    flex: 1; /* stretch horizontally */
+    height: 70px;
+}
+
+.mainButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.digitButtons button{
+    background-color: rgba(255, 255, 255, 0.850);
+}
+
+.operatorButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.operatorButtons button {
+    background-color: rgba(204, 222, 3, 0.85);
+}
+
+.digitButtons button,
+.operatorButtons button {
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+}
+
+button {
+    border: 2px solid gray;
+    border-radius: 12px;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
