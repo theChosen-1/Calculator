@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+  margin: 0;
+}
+
+.calcBody {
+    display: flex;
+    width: 500px;
+    height: 750px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
