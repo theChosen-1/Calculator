@@ -54,7 +54,7 @@ function calculate(num1, num2, operator) {
 function operate(newOperator) {
   // If user presses operator right after result
     if (memory !== null && currentInput === '') {
-        expression = memory + ' ' + newOperator + ' ';
+        expression = memory + newOperator;
         operator = newOperator;
         updateDisplay();
         return;
@@ -76,7 +76,7 @@ function operate(newOperator) {
         // Store the new operator, update the expression and clear the current number 
         // being typed so user can type the next number
         operator = newOperator;
-        expression = memory + ' ' + operator + ' ';
+        expression = memory + operator;
         currentInput = '';
         updateDisplay();
     }
