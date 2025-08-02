@@ -135,3 +135,25 @@ function clearLastEntry() {
 }
 
 // Attaching functions to buttons
+
+// Digit buttons (0–9)
+    document.querySelectorAll(".number").forEach(btn =>
+        btn.addEventListener("click", () => pressDigit(btn.value))
+    );
+
+// Decimal button (.)
+    document.querySelector(".decimal").addEventListener("click", pressDecimal);
+
+// Operator buttons (+, −, ×, ÷)
+    document.querySelectorAll(".operator").forEach(btn =>
+        btn.addEventListener("click", () => operate(btn.value))
+    );
+
+// Equals (=)
+    document.querySelector(".equals").addEventListener("click", pressEquals);
+
+// All Clear (AC)
+    document.querySelector(".allClear").addEventListener("click", clearAll);
+
+// Clear Entry (CE / backspace)
+    document.querySelector(".clearEntry").addEventListener("click", clearLastEntry);
