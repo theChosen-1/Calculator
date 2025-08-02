@@ -51,11 +51,11 @@ function calculate(num1, num2, operator) {
 }
 
 // When an operator is pressed
-function operate(op) {
+function operate(newOperator) {
   // If user presses operator right after result
     if (memory !== null && currentInput === '') {
-        expression = memory + ' ' + op + ' ';
-        operator = op;
+        expression = memory + ' ' + newOperator + ' ';
+        operator = newOperator;
         updateDisplay();
         return;
     }
@@ -75,7 +75,7 @@ function operate(op) {
 
         // Store the new operator, update the expression and clear the current number 
         // being typed so user can type the next number
-        operator = op;
+        operator = newOperator;
         expression = memory + ' ' + operator + ' ';
         currentInput = '';
         updateDisplay();
@@ -133,3 +133,5 @@ function clearLastEntry() {
     currentInput = currentInput.slice(0, -1);
     updateDisplay();
 }
+
+// Attaching functions to buttons

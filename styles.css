@@ -1,15 +1,15 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* full viewport height */
-  margin: 0;
+    /* centres the calculator to the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* full viewport height */
+    margin: 0;
 }
 
-.calcBody {
+.calcBody {     /* background of the calculator */
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 450px;
     height: 550px;
     border: 2px solid gray;
@@ -22,19 +22,20 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.display {
+.display {  /* display port for the calculator */
     width: 100%;
     height: 90px;
     border: 2px solid gray;
     border-radius: 6px;
     margin-bottom: 25px;
     background-color: rgba(255, 255, 255, 0.850);
+    font-size: xx-large;
+    font-weight: 500;
+    font-family:'Courier New', Courier, monospace;
+    text-align: right;
 }
 
-.buttons {
-    display: flex;
-}
-
+/* the AC and CE buttons */
 .functionButtons {
     display: flex;
     width: 100%;
@@ -50,16 +51,28 @@ body {
     flex: 1; /* stretch horizontally */
     height: 70px;
 }
+/* <-----------------> */
 
 .mainButtons {
     display: flex;
     justify-content: space-between;
 }
 
-.digitButtons button{
-    background-color: rgba(255, 255, 255, 0.850);
+/* the digit buttons along with decimal and = */
+.digitButtons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 315px;
 }
 
+.digitButtons button{
+    background-color: rgba(255, 255, 255, 0.850);
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    margin-right: 5px;
+}
+
+/* the operator buttons (*, +, etc.) */
 .operatorButtons {
     display: flex;
     flex-direction: column;
@@ -67,14 +80,11 @@ body {
 
 .operatorButtons button {
     background-color: rgba(204, 222, 3, 0.85);
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
 }
 
-.digitButtons button,
-.operatorButtons button {
-  margin-top: 2.5px;
-  margin-bottom: 2.5px;
-}
-
+/* settings for all buttons */
 button {
     border: 2px solid gray;
     border-radius: 12px;
