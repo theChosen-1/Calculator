@@ -29,17 +29,19 @@ body {
     border-radius: 6px;
     margin-bottom: 25px;
     background-color: rgba(255, 255, 255, 0.850);
-    font-size: xx-large;
-    font-weight: 500;
+    font-size: 90px;
+    font-weight: 300;
     font-family:'Courier New', Courier, monospace;
     text-align: right;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 /* the AC and CE buttons */
 .functionButtons {
     display: flex;
     width: 100%;
-    gap: 5px;
+    gap: 7px;
     margin-bottom: 5px;
 }
 
@@ -86,6 +88,8 @@ body {
 
 /* settings for all buttons */
 button {
+    display: inline-block;  /* allows for bounce, and press in effect */
+    transition: background-color 0.2s ease, transform 0.1s ease;
     border: 2px solid gray;
     border-radius: 12px;
     width: 100px;
@@ -93,4 +97,28 @@ button {
     text-align: center;
     font-size: xx-large;
     font-weight: bolder;
+    
+}
+
+/* allows for hover effect */
+button:hover {
+    transform: scale(1.05);
+    background-color: #ffffff !important;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Specific hover colors */
+.digitButtons .number:hover {
+    background-color: #bba0ff !important;
+}
+
+.digitButtons .decimal:hover {
+    background-color: #a5ff9e !important;
+}
+
+.digitButtons .equals:hover {
+    background-color: #ff9797 !important;
 }

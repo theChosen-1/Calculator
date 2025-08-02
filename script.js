@@ -108,12 +108,11 @@ function pressEquals() {
         const number = parseFloat(currentInput);
         // calculate the result
         memory = calculate(memory, number, operator);
-        expression += currentInput + ' = ';
         // Converts the result back to a string so it can be displayed
         // 	Sets it as the new currentInput so it shows on screen
         currentInput = memory.toString();
         operator = null;
-        updateDisplay();
+        display.textContent = currentInput;
         // Reset expression for next operation
         expression = '';
     }
