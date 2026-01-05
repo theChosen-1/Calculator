@@ -4,7 +4,7 @@ A clean, responsive web calculator built with vanilla JavaScript. Features a mod
 
 Built as part of my full-stack development journey with [The Odin Project](https://www.theodinproject.com/).
 
-![Calculator Screenshot](screenshot.png)
+![Calculator Screenshot](Screenshot.png)
 <!-- Add your screenshot: take a screenshot and save it as screenshot.png in the project root -->
 
 ## Live Demo
