@@ -31,7 +31,7 @@ Built as part of my full-stack development journey with [The Odin Project](https
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/theChosen-1/Calculator.git
+   git clone https://github.com/inshaal81/Calculator.git
    ```
 
 2. Open `index.html` in your browser
